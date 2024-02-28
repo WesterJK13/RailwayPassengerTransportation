@@ -52,7 +52,7 @@ namespace RailwayPassengerTransportation.Controllers
                 {
                     Models.Route route = _context.routes.Where(a => a.Id == item.Flight.RouteId).FirstOrDefault();
                     // первая станция для определения времени и цены
-                    ListStations firstStation = _context.listStations.Where(a => a.RouteId == route.Id).FirstOrDefault();
+                    //ListStations firstStation = _context.listStations.Where(a => a.RouteId == route.Id).FirstOrDefault();
 
                     ListStations listStationFrom = _context.listStations.Where(a => a.RouteId == route.Id && a.StationId == stationFrom).FirstOrDefault();
                     ListStations listStationTo = _context.listStations.Where(a => a.RouteId == route.Id && a.StationId == stationTo).FirstOrDefault();
@@ -69,7 +69,7 @@ namespace RailwayPassengerTransportation.Controllers
                     ModelSearchTrip modelSearch = new ModelSearchTrip();
                     modelSearch.trip = item;
                     modelSearch.Cost = cost;
-                    modelSearch.stationsStart = firstStation;
+                   // modelSearch.stationsStart = firstStation;
                     modelSearch.stationsFrom = listStationFrom;
                     modelSearch.stationsTo = listStationTo;
                     modelSearch.DateTimeLeave = timeFrom;
@@ -93,10 +93,17 @@ namespace RailwayPassengerTransportation.Controllers
                     Flight? flight = _context.flights.Where(a=>a.Id==item.FlightId).FirstOrDefault();
                     Models.Route? route = _context.routes.Where(a => a.Id == flight.Id).FirstOrDefault();
                     // первая станция для определения времени и цены
-                    ListStations? firstStation = _context.listStations.Where(a => a.RouteId == route.Id).FirstOrDefault();
+                    //ListStations? firstStation = _context.listStations.Where(a => a.RouteId == route.Id).FirstOrDefault();
 
-                    ListStations? listStationFrom = _context.listStations.Where(a => a.RouteId == route.Id && a.StationId == stationFrom).FirstOrDefault();
-                    ListStations? listStationTo = _context.listStations.Where(a => a.RouteId == route.Id && a.StationId == stationTo).FirstOrDefault();
+                    ListStations? listStationFrom = new ListStations();
+                    ListStations? listStationTo = new ListStations();
+
+                    if (route!=null && flight!=null)
+                    {
+                        listStationFrom = _context.listStations.Where(a => a.RouteId == route.Id && a.StationId == stationFrom).FirstOrDefault();
+                        listStationTo = _context.listStations.Where(a => a.RouteId == route.Id && a.StationId == stationTo).FirstOrDefault();
+                    }
+
 
                     if (listStationFrom==null || listStationTo==null || listStationFrom.Id >= listStationTo.Id) continue;
 
@@ -110,7 +117,7 @@ namespace RailwayPassengerTransportation.Controllers
                     ModelSearchTrip modelSearch = new ModelSearchTrip();
                     modelSearch.trip = item;
                     modelSearch.Cost = cost;
-                    modelSearch.stationsStart = firstStation;
+                    //modelSearch.stationsStart = firstStation;
                     modelSearch.stationsFrom = listStationFrom;
                     modelSearch.stationsTo = listStationTo;
                     modelSearch.DateTimeLeave = timeFrom;

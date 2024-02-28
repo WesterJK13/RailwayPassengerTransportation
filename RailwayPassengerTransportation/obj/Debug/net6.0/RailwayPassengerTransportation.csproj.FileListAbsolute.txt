@@ -73,3 +73,4 @@ C:\Users\varme\OneDrive\Рабочий стол\RailwayPassengerTransportation\R
 C:\Users\varme\OneDrive\Рабочий стол\RailwayPassengerTransportation\RailwayPassengerTransportation\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\varme\OneDrive\Рабочий стол\RailwayPassengerTransportation\RailwayPassengerTransportation\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutAuthorize.cshtml.rz.scp.css
 C:\Users\varme\OneDrive\Рабочий стол\RailwayPassengerTransportation\RailwayPassengerTransportation\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\varme\OneDrive\Рабочий стол\RailwayPassengerTransportation\RailwayPassengerTransportation\obj\Debug\net6.0\RailwayPassengerTransportation.sourcelink.json

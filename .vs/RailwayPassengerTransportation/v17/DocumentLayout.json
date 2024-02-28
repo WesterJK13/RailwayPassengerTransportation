@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\views\\user\\tickets.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\views\\user\\tickets.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\models\\modelsearchtrip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\models\\modelsearchtrip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\controllers\\dispatchercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,25 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\views\\user\\trips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\views\\user\\trips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|c:\\users\\varme\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\railwaypassengertransportation\\railwaypassengertransportation\\views\\admin\\dispetcher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5C1403D-7074-4A6A-9DE9-3307E3159FD9}|RailwayPassengerTransportation\\RailwayPassengerTransportation.csproj|solutionrelative:railwaypassengertransportation\\views\\admin\\dispetcher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RailwayPassengerTransportationDB/True/SqlTable/dbo.admins.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,86 +34,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Trips.cshtml",
-              "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Views\\User\\Trips.cshtml",
-              "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Views\\User\\Trips.cshtml",
-              "ToolTip": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Views\\User\\Trips.cshtml",
-              "RelativeToolTip": "RailwayPassengerTransportation\\Views\\User\\Trips.cshtml",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGUAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-28T01:04:11.489Z",
+              "DocumentIndex": 0,
+              "Title": "ModelSearchTrip.cs",
+              "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Models\\ModelSearchTrip.cs",
+              "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Models\\ModelSearchTrip.cs",
+              "ToolTip": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Models\\ModelSearchTrip.cs",
+              "RelativeToolTip": "RailwayPassengerTransportation\\Models\\ModelSearchTrip.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:23:28.331Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "RailwayPassengerTransportation\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAANEAAAAAAAAAAAAYwOYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:15:26.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Models\\Ticket.cs",
-              "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Models\\Ticket.cs",
-              "ToolTip": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Models\\Ticket.cs",
-              "RelativeToolTip": "RailwayPassengerTransportation\\Models\\Ticket.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T01:03:39.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Tickets.cshtml",
-              "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Views\\User\\Tickets.cshtml",
-              "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Views\\User\\Tickets.cshtml",
-              "ToolTip": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Views\\User\\Tickets.cshtml",
-              "RelativeToolTip": "RailwayPassengerTransportation\\Views\\User\\Tickets.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-28T00:57:44.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dispetcher.cshtml",
-              "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Views\\Admin\\Dispetcher.cshtml",
-              "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Views\\Admin\\Dispetcher.cshtml",
-              "ToolTip": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Views\\Admin\\Dispetcher.cshtml",
-              "RelativeToolTip": "RailwayPassengerTransportation\\Views\\Admin\\Dispetcher.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADkAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-28T00:43:18.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dbo.admins [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RailwayPassengerTransportationDB/True/SqlTable/dbo.admins.sql",
-              "ToolTip": "dbo.admins [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-02-28T00:52:48.816Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Controllers\\UserController.cs",
               "RelativeToolTip": "RailwayPassengerTransportation\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAJcAAAAAAAAAAAAwwKkAAAAkAAAA",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAYwJ0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T00:46:57.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Views\\Admin\\Index.cshtml",
@@ -137,26 +94,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DispatcherController.cs",
               "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Controllers\\DispatcherController.cs",
               "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Controllers\\DispatcherController.cs",
               "ToolTip": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Controllers\\DispatcherController.cs",
               "RelativeToolTip": "RailwayPassengerTransportation\\Controllers\\DispatcherController.cs",
-              "ViewState": "AQIAAJUBAAAAAAAAAAAUwKABAAAAAAAA",
+              "ViewState": "AQIAAJgBAAAAAAAAAAAUwKABAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T00:41:30.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "RailwayPassengerTransportation\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\varme\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\RailwayPassengerTransportation\\RailwayPassengerTransportation\\Controllers\\AdminController.cs",
               "RelativeToolTip": "RailwayPassengerTransportation\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAAwHUAAAA8AAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAuwHUAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T00:41:13.14Z",
               "EditorCaption": ""
