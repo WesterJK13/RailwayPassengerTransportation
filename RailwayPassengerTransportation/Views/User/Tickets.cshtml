@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "_LayoutAuthorize";
+    List<Ticket> tickets = (List<Ticket>)ViewData["tickets"];
+    List<Station> stations= (List<Station>)ViewData["stations"];
+    List<ListStations> listStations = (List<ListStations>)ViewData["listStations"];
+    int num = 1;
+}
+
+<h3>Список билетов</h3>
+<a asp-action="Index" class="btn btn-secondary mb-3">Назад</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center">№</th>
+            <th>Станция отправления</th>
+            <th>Станция прибытия</th>
+            <th>Стоимость</th>
+            <th>Дата отправления</th>
+            <th>Дата прибытия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in tickets)
+        {
+            <tr>
+                <td class="text-center">@num</td>
+                <td>@stations.Where(a => a.Id == listStations.Where(a => a.Id == item.StationStartId).Select(s=>s.StationId).FirstOrDefault()).Select(s => s.Name).FirstOrDefault()</td>
+                <td>@stations.Where(a => a.Id == listStations.Where(a => a.Id == item.StationEndId).Select(s => s.StationId).FirstOrDefault()).Select(s => s.Name).FirstOrDefault()</td>
+                <td>@item.Cost</td>
+                <td>@item.DateTimeStart</td>
+                <td>@item.DateTimeEnd</td>
+            </tr>
+            num++;
+        }
+    </tbody>
+</table>

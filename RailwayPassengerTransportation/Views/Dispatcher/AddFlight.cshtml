@@ -1,0 +1,86 @@
+﻿@{
+    Layout = "_LayoutAuthorize";
+    List<RailwayPassengerTransportation.Models.Route> route = (List<RailwayPassengerTransportation.Models.Route>)ViewData["routes"];
+    List<Machinist> machinists = (List<Machinist>)ViewData["machinists"];
+    List<Conductor> conductors = (List<Conductor>)ViewData["conductors"];
+    List<Train> trains = (List<Train>)ViewData["trains"];
+    //int num = 1;
+}
+
+<h3>Просмотр маршрута</h3>
+<a asp-action="ListFlights" class="btn btn-secondary mb-3">Назад</a>
+
+<form asp-action="AddFlight" class="mb-3">
+    <div class="mb-3">
+        <label class="form-label">Выберите маршрут</label>
+        <select class="form-select mb-3" name="route">
+            @foreach (var item in route)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    <div class="mb-1">
+        <label class="form-label">Выберите дни недели, в которые работает рейс:</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="isMon" />
+        <label class="form-label">Понедельник</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="isThues" />
+        <label class="form-label">Вторник  </label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="isWen" />
+        <label class="form-label">Среда  </label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="isThurs" />
+        <label class="form-label">Четверг  </label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="isFrid" />
+        <label class="form-label">Пятница  </label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="isSat" />
+        <label class="form-label">Суббота  </label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="isSun" />
+        <label class="form-label">Воскресенье  </label>
+    </div>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Выберите время отправления поезда:</label>
+        <input type="time" name="TimeStart" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Выберите поезд: </label>
+        <select class="form-select mb-3" name="train">
+            @foreach (var item in trains)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Выберите машиниста: </label>
+        <select class="form-select mb-3" name="machinist">
+            @foreach (var item in machinists)
+            {
+                <option value="@item.Id">@item.Surname @item.Name @item.Fathername</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Выберите проводника: </label>
+        <select class="form-select mb-3" name="conductor">
+            @foreach (var item in conductors)
+            {
+                <option value="@item.Id">@item.Surname @item.Name @item.Fathername</option>
+            }
+        </select>
+    </div>
+    <button class="btn btn-primary" type="submit">Выбрать</button>
+</form>

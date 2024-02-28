@@ -1,0 +1,109 @@
+﻿@{
+    Layout = "_Layout";
+    List<Train> trains = (List<Train>)ViewData["trains"];
+
+    List<Trip> trips = (List<Trip>)ViewData["trips"];
+    List<RailwayPassengerTransportation.Models.Route> routes = (List<RailwayPassengerTransportation.Models.Route>)ViewData["routes"];
+    List<Flight> flights = (List<Flight>)ViewData["flights"];
+    List<RailwayCarriage> railwayCarriages = (List<RailwayCarriage>)ViewData["railwayCarriages"];
+    List<Ticket> tickets = (List<Ticket>)ViewData["tickets"];
+    List<Station> stations = (List<Station>)ViewData["stations"];
+    List<ListStations> listStations = (List<ListStations>)ViewData["listStations"];
+    List<ModelSearchTrip> modelSearchTrips = (List<ModelSearchTrip>)ViewData["modelSearchTrips"];
+    int num = 1;
+}
+
+<h3>Список поездок</h3>
+<a asp-action="Index" class="btn btn-secondary mb-3">Назад</a>
+
+<form asp-action="ChooseDateTrip" class="mb-3">
+    <div class="mb-3">
+        <label class="form-label">Выберите дату</label>
+        <input type="date" name="TimeStart" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Откуда</label>
+        <select class="form-select mb-3" name="stationFrom">
+            @foreach (var item in stations)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Куда</label>
+        <select class="form-select mb-3" name="stationTo">
+            @foreach (var item in stations)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">Выбрать</button>
+</form>
+
+@* <a data-bs-toggle="modal" data-bs-target="#addTrain" class="btn btn-success mb-3">Добавить</a> *@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center">№</th>
+            <th>Маршрут</th>
+            <th>Время отправления</th>
+            <th>Время прибытия</th>
+            <th>Всего мест</th>
+            <th>Свободно мест</th>
+            <th>Цена билета</th>
+            <th>Станция отправления</th>
+            <th>Станция прибытия</th>
+            <th class="text-center">Купить</th>
+        </tr>
+    </thead>
+    <tbody>
+        @* @if (trips!=null) {
+            @foreach (var item in trips)
+            {
+                <tr>
+                    <td class="text-center">@num</td>
+                    <td>@item.Flight.Route.Name</td>
+                    <td>@item.DateTimeLeave</td>
+                    <td>@railwayCarriages.Where(a=>a.TrainId==item.Flight.TrainId).Select(s=>s.CountSeats).Sum()</td>
+                    <td>@(railwayCarriages.Where(a => a.TrainId == item.Flight.TrainId).Select(s => s.CountSeats).Sum()-tickets.Where(a=>a.TripId==item.Id).Count())</td>
+                    <td>@(railwayCarriages.Where(a => a.TrainId == item.Flight.TrainId).Select(s => s.CountSeats).Sum()-tickets.Where(a=>a.TripId==item.Id).Count())</td>
+                    <td class="text-center">
+                        @if (tickets.Where(a => a.TripId == item.Id).Count() < railwayCarriages.Where(a => a.TrainId == item.Flight.TrainId).Select(s => s.CountSeats).Sum())
+                        {
+                            //<a asp-action="DeleteTrip" asp-route-id="@item.Id" class="btn btn-success">Купить</a>
+                        }
+                    </td>
+                </tr>
+                num++;
+            }
+        } *@
+        @if (modelSearchTrips != null)
+        {
+            @foreach (var item in modelSearchTrips)
+            {
+                <tr>
+                    <td class="text-center">@num</td>
+                    <td>@item.trip.Flight.Route.Name</td>
+                    <td>@item.DateTimeLeave</td>
+                    <td>@item.DateTimeCome</td>
+                    <td>@railwayCarriages.Where(a => a.TrainId == item.trip.Flight.TrainId).Select(s => s.CountSeats).Sum()</td>
+                    <td>@(railwayCarriages.Where(a => a.TrainId == item.trip.Flight.TrainId).Select(s => s.CountSeats).Sum() - tickets.Where(a => a.TripId == item.Id).Count())</td>
+                    <td>@item.Cost</td>
+                    <td>@item.stationsFrom.Station.Name</td>
+                    <td>@item.stationsTo.Station.Name</td>
+                    <td class="text-center">
+                        @if (tickets.Where(a => a.TripId == item.Id).Count() < railwayCarriages.Where(a => a.TrainId == item.trip.Flight.TrainId).Select(s => s.CountSeats).Sum())
+                        {
+                            //<a asp-action="DeleteTrip" asp-route-id="@item.Id" class="btn btn-success">Купить</a>
+                        }
+                    </td>
+                </tr>
+                num++;
+            }
+        }
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "_LayoutAuthorize";
+    Passenger passenger = (Passenger)ViewData["passengers"];
+}
+
+
+<a asp-action="Index" class="btn btn-secondary mb-3">Назад</a>
+<h3>У вас на счете: @passenger.Money</h3>
+<a class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addStation">Пополнить счёт</a>
+
+<div class="modal fade" id="addStation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Пополнение счета</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="AddMoney">
+                <div class="modal-body">
+                    <label class="form-label">Укажите сумму</label>
+                    <input type="text" class="form-control" name="Money" />
+                </div>
+                <input type="hidden" name="id" value="@passenger.Id"/>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отменить</button>
+                    <button type="submit" class="btn btn-success">Подтвердить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

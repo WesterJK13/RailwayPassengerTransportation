@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="card" style="width: 18rem;">
+        <img src="~/img/digtal-railway-shutterstock_315953618_sm-2048x1365.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Купить билет</h5>
+            <p class="card-text">Поиск подходящего поезда и покупка билета.</p>
+            <a asp-action="Trips" class="btn btn-primary">Перейти</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Регистрация</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="Register">
+                <div class="modal-body">
+                    <label class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" name="Surname" />
+
+                    <label class="form-label">Имя</label>
+                    <input type="text" class="form-control" name="Name" />
+
+                    <label class="form-label">Отчество</label>
+                    <input type="text" class="form-control" name="FatherName" />
+
+                    <label class="form-label">Паспорт</label>
+                    <input type="text" class="form-control" name="Passport" />
+
+                    <label class="form-label">Почта</label>
+                    <input type="text" class="form-control" name="Email" />
+
+                    <label class="form-label">Пароль</label>
+                    <input type="text" class="form-control" name="Password" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отменить</button>
+                    <button type="submit" class="btn btn-success">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Вход</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="Login">
+                <div class="modal-body">
+
+                    <label class="form-label">Почта</label>
+                    <input type="text" class="form-control" name="Email" />
+
+                    <label class="form-label">Пароль</label>
+                    <input type="text" class="form-control" name="Password" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отменить</button>
+                    <button type="submit" class="btn btn-success">Войти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

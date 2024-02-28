@@ -1,0 +1,180 @@
+﻿@{
+    Layout = "_LayoutAuthorize";
+    List<Station> station = (List<Station>)ViewData["stations"];
+    List<ListStations> listStations = (List<ListStations>)ViewData["listStations"];
+    int routeId = Convert.ToInt32(ViewData["routeId"]);
+    //int num = 1;
+}
+
+<h3>Просмотр маршрута</h3>
+<a asp-action="Routes" class="btn btn-secondary mb-3">Назад</a>
+
+<form asp-action="SaveRouteForm">
+    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addStation">Добавить станцию в маршрут</a>
+    <section class="py-5">
+        <ul class="timeline">
+            @foreach (var item in listStations)
+            {
+                <li class='timeline-item mb - 5'>
+                    <h5 class='fw-bold'>@item.Station.Name</h5>
+                    <a asp-action="DeleteStationInRoute" asp-route-id="@item.Id" asp-route-IdRoute="@routeId" class='btn btn-danger remove__station'>Удалить станцию</a>
+                </li>
+            }
+        </ul>
+    </section>
+</form>
+
+<style>
+    .timeline {
+        border-left: 1px solid hsl(0.3turn 60% 45% / .7);
+        position: relative;
+        list-style: none;
+    }
+
+    .timeline .timeline-item {
+        position: relative;
+    }
+
+    .timeline .timeline-item:after {
+        position: absolute;
+        display: block;
+        top: 0;
+    }
+
+    .timeline .timeline-item:after {
+        background-color: hsl(0.3turn 60% 45% / .7);
+        left: -38px;
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        content: "";
+    }
+</style>
+
+<div class="modal fade" id="addStation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Добавление станции</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="AddStationToRoute">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Выберите станцию</label>
+                        <select class="form-select" name="station">
+                            @foreach (var item in station)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Количество дней для прибытия на станцию (относительно начальной станции)</label>
+                        <input type="text" class="form-control" name="TimeToArriveDay" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Количество часов для прибытия на станцию (относительно начальной станции)</label>
+                        <input type="text" class="form-control" name="TimeToArriveHour" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Количество минут для прибытия на станцию (относительно начальной станции)</label>
+                        <input type="text" class="form-control" name="TimeToArriveMinutes" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Время ожидания на станции (в минутах)</label>
+                        <input type="text" class="form-control" name="TimeToLeave" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Стоимость (относительно начальной станции)</label>
+                        <input type="text" class="form-control" name="Cost" />
+                    </div>
+                    <input type="hidden" class="form-control" name="idRoute" value="@ViewData["routeId"]"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отменить</button>
+                    <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // $(document).ready(function () {
+    //     $('#addStation form').submit(function (e) {
+    //         e.preventDefault()
+
+    //         const station = $(this).find("select[name='station'] option:selected").val()
+    //         const TimeToArriveDay = $(this).find("input[name='TimeToArriveDay']").val()
+    //         const TimeToArriveHour = $(this).find("input[name='TimeToArriveHour']").val()
+    //         const TimeToArriveMinutes = $(this).find("input[name='TimeToArriveMinutes']").val()
+    //         const TimeToLeave = $(this).find("input[name='TimeToLeave']").val()
+    //         const Cost = $(this).find("input[name='Cost']").val()
+
+    //         const li = "<li class='timeline-item mb - 5' data-station='" + station + "' data-TimeToArriveDay='" + TimeToArriveDay + "' data-TimeToArriveHour='" + TimeToArriveHour + "' data-TimeToArriveMinutes='" + TimeToArriveMinutes + "' data-TimeToLeave='" + TimeToLeave + "' data-Cost='" + Cost + "'><h5 class='fw-bold'>" + $(this).find("select[name='station'] option:selected").text() + "</h5><a class='btn btn-danger remove__station'>Удалить станцию</a></li>"
+    //         $('.timeline').append(li)
+    //         $('.remove__station').click(function () {
+    //             $(this).closest('li').remove()
+    //         })
+
+    //         const data = new FormData(this)
+
+    //         $.ajax({
+    //             url: "./AddRouteStation",
+    //             type: "post",
+    //             processData: false,
+    //             contentType: false,
+    //             data: data,
+    //             success: function (response) {
+    //                 $('.timeline').append(response)
+    //             },
+    //         })
+    //     })
+
+    //     $('#addRouteForm').submit(function (e) {
+    //         e.preventDefault()
+    //         const data = new FormData(this)
+    //         let count = 0;
+    //         let arr = []
+    //         if ($(this).find('.timeline li').length >= 1) {
+    //             $(this).find('.timeline li').each(function (index) {
+    //                 let obj = {
+    //                     'station': $(this).data('station'),
+    //                     'timetoarriveday': $(this).data('timetoarriveday'),
+    //                     'timetoarrivehour': $(this).data('timetoarrivehour'),
+    //                     'timetoarriveminutes': $(this).data('timetoarriveminutes'),
+    //                     'timetoleave': $(this).data('timetoleave'),
+    //                     'cost': $(this).data('cost'),
+    //                 }
+                    
+    //                 arr.push(obj)
+    //             })
+
+    //         }
+    //         data.append('arr', JSON.stringify(arr))
+    //         console.log(data)
+
+    //         $.ajax({
+    //             url: "./AddRouteStation",
+    //             type: "post",
+    //             processData: false,
+    //             contentType: false,
+    //             data: data,
+    //             success: function (response) {
+    //                 $('.timeline').append(response)
+    //             },
+    //         })
+    //     })
+
+        // $('.remove__station').click(function () {
+        //     $(this).closest('li').remove()
+        // })
+        // $.ajax({
+        //     url: "./Index",
+        //     success: function (response) {
+        //         $('.timeline').append(response)
+        //     },
+        // })
+    })
+</script>

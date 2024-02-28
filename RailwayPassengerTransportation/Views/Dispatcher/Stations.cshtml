@@ -1,0 +1,74 @@
+﻿@{
+    Layout = "_LayoutAuthorize";
+    List<Station> station = (List<Station>)ViewData["stations"];
+    int num = 1;
+}
+
+<h3>Список станций</h3>
+<a asp-action="Index" class="btn btn-secondary mb-3">Назад</a>
+<a class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addStation">Добавить</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center">№</th>
+            <th>Наименование</th>
+            <th class="text-center">Удалить</th>
+            <th class="text-center">Редактировать</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in station)
+        {
+            <tr>
+                <td class="text-center">@num</td>
+                <td>@item.Name</td>
+                <td class="text-center"><a asp-action="DeleteStation" asp-route-id="@item.Id" class="btn btn-danger">Удалить</a></td>
+                <td class="text-center"><a class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#editStation_@item.Id">Редактировать</a></td>
+            </tr>
+
+            <div class="modal fade" id="editStation_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Редактирование станции</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form asp-action="EditStation">
+                            <div class="modal-body">
+                                <label class="form-label">Наименование станции</label>
+                                <input type="text" class="form-control" name="Name" value="@item.Name" />
+                                <input type="hidden" name="id" value="@item.Id">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отменить</button>
+                                <button type="submit" class="btn btn-success">Редактировать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            num++;
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="addStation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Добавление станции</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="AddStation">
+                <div class="modal-body">
+                    <label class="form-label">Наименование станции</label>
+                    <input type="text" class="form-control" name="Name" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отменить</button>
+                    <button type="submit" class="btn btn-success">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

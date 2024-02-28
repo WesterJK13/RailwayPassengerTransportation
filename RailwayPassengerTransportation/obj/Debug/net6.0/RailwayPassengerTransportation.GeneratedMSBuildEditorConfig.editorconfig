@@ -1,0 +1,131 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RailwayPassengerTransportation
+build_property.RootNamespace = RailwayPassengerTransportation
+build_property.ProjectDir = C:\Users\varme\OneDrive\Рабочий стол\RailwayPassengerTransportation\RailwayPassengerTransportation\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\varme\OneDrive\Рабочий стол\RailwayPassengerTransportation\RailwayPassengerTransportation
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Admin/Dispetcher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGlzcGV0Y2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Admin/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/AddFlight.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxBZGRGbGlnaHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/AddRoute.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxBZGRSb3V0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/AddTrain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxBZGRUcmFpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/Conductors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxDb25kdWN0b3JzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/ListFlights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxMaXN0RmxpZ2h0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/Machinists.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxNYWNoaW5pc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/PersonalMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxQZXJzb25hbE1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/Routes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxSb3V0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/Stations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxTdGF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/Trains.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxUcmFpbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Dispatcher/Trips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcGF0Y2hlclxUcmlwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Home/Trips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmlwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/User/Balance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCYWxhbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/User/Tickets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxUaWNrZXRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/User/Trips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxUcmlwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-04bjgamygp
+
+[C:/Users/varme/OneDrive/Рабочий стол/RailwayPassengerTransportation/RailwayPassengerTransportation/Views/Shared/_LayoutAuthorize.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBdXRob3JpemUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dm0ll0mo42

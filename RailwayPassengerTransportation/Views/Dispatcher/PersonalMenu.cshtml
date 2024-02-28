@@ -1,0 +1,27 @@
+﻿@{
+     Layout = "_LayoutAuthorize";
+ }
+
+<a asp-action="Index" class="btn btn-secondary mb-3">Назад</a>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card">
+            <img src="~/img/проводник.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Проводники</h5>
+                <p class="card-text"></p>
+                <a asp-action="Conductors" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="~/img/машинист.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Машинисты</h5>
+                <p class="card-text"></p>
+                <a asp-action="Machinists" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+</div>

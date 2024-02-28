@@ -1,0 +1,67 @@
+﻿@{
+     Layout = "_LayoutAuthorize";
+ }
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card">
+            <img src="~/img/станция.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Управление станциями</h5>
+                <p class="card-text">Добавление новой станции.</p>
+                <a asp-action="Stations" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="~/img/маршруты.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Управление маршрутами</h5>
+                <p class="card-text">Создание новых маршрутов.</p>
+                <a asp-action="Routes" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="~/img/рейсы.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Список рейсов</h5>
+                <p class="card-text">Перейти к списку рейсов.</p>
+                <a asp-action="ListFlights" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="~/img/ближайшие_поездки.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Просмотр ближайших поездок</h5>
+                <p class="card-text">Просмотр ближайших отправлений поездов.</p>
+                <a asp-action="Trips" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="~/img/поезда.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Управление поездами</h5>
+                <p class="card-text">Добавление, редактирование поездов.</p>
+                <a asp-action="Trains" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="~/img/персонал.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Управление персоналом</h5>
+                <p class="card-text">Управление машинистами, проводниками.</p>
+                <a asp-action="PersonalMenu" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+</div>

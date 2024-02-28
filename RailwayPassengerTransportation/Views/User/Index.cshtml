@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_LayoutAuthorize";
+}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card">
+            <img src="~/img/digtal-railway-shutterstock_315953618_sm-2048x1365.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Купить билет</h5>
+                <p class="card-text">Поиск подходящего поезда и покупка билета.</p>
+                <a asp-action="Trips" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="~/img/digtal-railway-shutterstock_315953618_sm-2048x1365.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Мои билеты</h5>
+                <p class="card-text">Просмотр билетов.</p>
+                <a asp-action="Tickets" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="~/img/digtal-railway-shutterstock_315953618_sm-2048x1365.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Баланс</h5>
+                <p class="card-text">Пополнение счета.</p>
+                <a asp-action="Balance" class="btn btn-primary">Перейти</a>
+            </div>
+        </div>
+    </div>
+</div>

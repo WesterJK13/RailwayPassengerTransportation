@@ -1,0 +1,124 @@
+﻿@{
+    Layout = "_LayoutAuthorize";
+    List<Passenger> passengers = (List<Passenger>)ViewData["passengers"];
+    int num = 1;
+}
+
+<h3>Список пользователей</h3>
+<a asp-action="Index" class="btn btn-secondary mb-3">Назад</a>
+<a class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addUser">Добавить</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center">№</th>
+            <th>ФИО</th>
+            <th>Email</th>
+            <th class="text-center">Удалить</th>
+            <th class="text-center">Редактировать</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (passengers!=null) 
+        {
+            @foreach (var item in passengers)
+            {
+                <tr>
+                    <td class="text-center">@num</td>
+                    <td>@item.Surname @item.Name @item.Fathername</td>
+                    <td>@item.Email</td>
+                    <td class="text-center"><a asp-action="DeleteUser" asp-route-id="@item.Id" class="btn btn-danger">Удалить</a></td>
+                    <td class="text-center"><a class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#editUser_@item.Id">Редактировать</a></td>
+                </tr>
+
+                <div class="modal fade" id="editUser_@item.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Редактирование пользователя</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <form asp-action="EditUser">
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label class="form-label">Фамилия</label>
+                                        <input type="text" class="form-control" name="Surname" value="@item.Surname" />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Имя</label>
+                                        <input type="text" class="form-control" name="Name" value="@item.Name" />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Отчество</label>
+                                        <input type="text" class="form-control" name="Fathername" value="@item.Fathername" />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input type="text" class="form-control" name="Email" value="@item.Email" />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-control" name="Password" value="@item.Password" />
+                                    </div>
+                                    
+                                    <input type="hidden" name="id" value="@item.Id">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отменить</button>
+                                    <button type="submit" class="btn btn-success">Редактировать</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                num++;
+            }
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="addUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Добавление пользователя</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="AddUser">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Фамилия</label>
+                        <input type="text" class="form-control" name="Surname" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Имя</label>
+                        <input type="text" class="form-control" name="Name" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Отчество</label>
+                        <input type="text" class="form-control" name="Fathername" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="text" class="form-control" name="Email"/>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" name="Password"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отменить</button>
+                    <button type="submit" class="btn btn-success">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

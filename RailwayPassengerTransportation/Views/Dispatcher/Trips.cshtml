@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "_LayoutAuthorize";
+    List<Train> trains = (List<Train>)ViewData["trains"];
+
+    List<Trip> trips = (List<Trip>)ViewData["trips"];
+    List<RailwayPassengerTransportation.Models.Route> routes = (List<RailwayPassengerTransportation.Models.Route>)ViewData["routes"];
+    List<Flight> flights = (List<Flight>)ViewData["flights"];
+    List<RailwayCarriage> railwayCarriages = (List<RailwayCarriage>)ViewData["railwayCarriages"];
+    List<Ticket> tickets = (List<Ticket>)ViewData["tickets"];
+    int num = 1;
+}
+
+<h3>Список поездок</h3>
+<a asp-action="Index" class="btn btn-secondary mb-3">Назад</a>
+
+<form asp-action="ChooseDateTrip" class="mb-3">
+    <label class="form-label">Выберите дату</label>
+    <input type="date" name="TimeStart"/>
+    <button class="btn btn-primary" type="submit">Выбрать</button>
+</form>
+
+@* <a data-bs-toggle="modal" data-bs-target="#addTrain" class="btn btn-success mb-3">Добавить</a> *@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center">№</th>
+            <th>Маршрут</th>
+            <th>Время отправления</th>
+            <th>Всего мест</th>
+            <th>Свободно мест</th>
+            <th class="text-center">Удалить</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (trips!=null) {
+            @foreach (var item in trips)
+            {
+                <tr>
+                    <td class="text-center">@num</td>
+                    <td>@item.Flight.Route.Name</td>
+                    <td>@item.DateTimeLeave</td>
+                    <td>@railwayCarriages.Where(a=>a.TrainId==item.Flight.TrainId).Select(s=>s.CountSeats).Sum()</td>
+                    <td>@(railwayCarriages.Where(a => a.TrainId == item.Flight.TrainId).Select(s => s.CountSeats).Sum()-tickets.Where(a=>a.TripId==item.Id).Count())</td>
+                    <td class="text-center">
+                        @if (tickets.Where(a => a.TripId == item.Id).Count()==0)
+                        {
+                            <a asp-action="DeleteTrip" asp-route-id="@item.Id" class="btn btn-danger">Удалить</a>
+                        }
+                    </td>
+                </tr>
+                num++;
+            }
+        }
+    </tbody>
+</table>

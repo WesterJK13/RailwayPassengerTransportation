@@ -1,0 +1,159 @@
+﻿@{
+    Layout = "_LayoutAuthorize";
+    List<RailwayCarriage> railwayCarriages = (List<RailwayCarriage>)ViewData["railwayCarriages"];
+    int trainId = Convert.ToInt32(ViewData["trainId"]);
+    //int num = 1;
+}
+
+<h3>Просмотр поезда</h3>
+<a asp-action="Trains" class="btn btn-secondary mb-3">Назад</a>
+
+<form asp-action="SaveRouteForm">
+    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addCarriage">Добавить вагон</a>
+    <section class="py-5">
+        <ul class="timeline">
+            @foreach (var item in railwayCarriages)
+            {
+                <li class='timeline-item mb - 5'>
+                    <h5 class='fw-bold'>Вагон @item.Num</h5>
+                    <p class="text-muted mb-2 fw-bold">Количество мест: @item.CountSeats</p>
+                    <a asp-action="DeleteCarriageInTrain" asp-route-id="@item.Id" asp-route-IdRoute="@trainId" class='btn btn-danger'>Удалить вагон</a>
+                </li>
+            }
+        </ul>
+    </section>
+</form>
+
+<style>
+    .timeline {
+        border-left: 1px solid hsl(0.3turn 60% 45% / .7);
+        position: relative;
+        list-style: none;
+    }
+
+    .timeline .timeline-item {
+        position: relative;
+    }
+
+    .timeline .timeline-item:after {
+        position: absolute;
+        display: block;
+        top: 0;
+    }
+
+    .timeline .timeline-item:after {
+        background-color: hsl(0.3turn 60% 45% / .7);
+        left: -38px;
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        content: "";
+    }
+</style>
+
+<div class="modal fade" id="addCarriage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Добавление вагона</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="AddCarriageToTrain">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Номер вагона</label>
+                        <input type="text" class="form-control" name="Num" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Количество мест в вагоне</label>
+                        <input type="text" class="form-control" name="CountSeats" />
+                    </div>
+                    <input type="hidden" class="form-control" name="idTrain" value="@ViewData["trainId"]"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Отменить</button>
+                    <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // $(document).ready(function () {
+    //     $('#addStation form').submit(function (e) {
+    //         e.preventDefault()
+
+    //         const station = $(this).find("select[name='station'] option:selected").val()
+    //         const TimeToArriveDay = $(this).find("input[name='TimeToArriveDay']").val()
+    //         const TimeToArriveHour = $(this).find("input[name='TimeToArriveHour']").val()
+    //         const TimeToArriveMinutes = $(this).find("input[name='TimeToArriveMinutes']").val()
+    //         const TimeToLeave = $(this).find("input[name='TimeToLeave']").val()
+    //         const Cost = $(this).find("input[name='Cost']").val()
+
+    //         const li = "<li class='timeline-item mb - 5' data-station='" + station + "' data-TimeToArriveDay='" + TimeToArriveDay + "' data-TimeToArriveHour='" + TimeToArriveHour + "' data-TimeToArriveMinutes='" + TimeToArriveMinutes + "' data-TimeToLeave='" + TimeToLeave + "' data-Cost='" + Cost + "'><h5 class='fw-bold'>" + $(this).find("select[name='station'] option:selected").text() + "</h5><a class='btn btn-danger remove__station'>Удалить станцию</a></li>"
+    //         $('.timeline').append(li)
+    //         $('.remove__station').click(function () {
+    //             $(this).closest('li').remove()
+    //         })
+
+    //         const data = new FormData(this)
+
+    //         $.ajax({
+    //             url: "./AddRouteStation",
+    //             type: "post",
+    //             processData: false,
+    //             contentType: false,
+    //             data: data,
+    //             success: function (response) {
+    //                 $('.timeline').append(response)
+    //             },
+    //         })
+    //     })
+
+    //     $('#addRouteForm').submit(function (e) {
+    //         e.preventDefault()
+    //         const data = new FormData(this)
+    //         let count = 0;
+    //         let arr = []
+    //         if ($(this).find('.timeline li').length >= 1) {
+    //             $(this).find('.timeline li').each(function (index) {
+    //                 let obj = {
+    //                     'station': $(this).data('station'),
+    //                     'timetoarriveday': $(this).data('timetoarriveday'),
+    //                     'timetoarrivehour': $(this).data('timetoarrivehour'),
+    //                     'timetoarriveminutes': $(this).data('timetoarriveminutes'),
+    //                     'timetoleave': $(this).data('timetoleave'),
+    //                     'cost': $(this).data('cost'),
+    //                 }
+                    
+    //                 arr.push(obj)
+    //             })
+
+    //         }
+    //         data.append('arr', JSON.stringify(arr))
+    //         console.log(data)
+
+    //         $.ajax({
+    //             url: "./AddRouteStation",
+    //             type: "post",
+    //             processData: false,
+    //             contentType: false,
+    //             data: data,
+    //             success: function (response) {
+    //                 $('.timeline').append(response)
+    //             },
+    //         })
+    //     })
+
+        // $('.remove__station').click(function () {
+        //     $(this).closest('li').remove()
+        // })
+        // $.ajax({
+        //     url: "./Index",
+        //     success: function (response) {
+        //         $('.timeline').append(response)
+        //     },
+        // })
+    })
+</script>
